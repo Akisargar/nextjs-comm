@@ -36,7 +36,7 @@ export function Footer() {
               <h3 className="text-xl font-semibold text-green-500">PUNE 2025</h3>
             </div>
             <div className="space-y-4 text-gray-400">
-              <p>Thanks for joining us At Next.js Community Day Pune 2025! We're Excited To Foster Innovation And Growth Together. Stay Connected! We Look Out For Future Events To Share This Movement Better!</p>
+              <p>Thanks for joining us At Next.js Community Day Pune 2025! We`re Excited To Foster Innovation And Growth Together. Stay Connected! We Look Out For Future Events To Share This Movement Better!</p>
               <div className="space-y-2">
                 <p>Call: +91 9876543210</p>
                 <p>Email: events@nodejscommunity.in</p>
