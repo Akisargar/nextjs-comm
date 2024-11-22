@@ -32,8 +32,8 @@ const agendaItems: AgendaItem[] = [
 export function Agenda() {
   return (
     <section className="bg-gray-900 text-white py-16">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Agenda</h2>
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-12 text-heading border-y border-primary py-8">Agenda</h2>
         <div className="space-y-8">
           {agendaItems.map((item, index) => (
             <div key={index} className="bg-gray-800 p-4 rounded-lg">

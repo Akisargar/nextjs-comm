@@ -19,3 +19,58 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./fonts/GeistMono-Regular.woff2') format('woff2'),
+      url('./fonts/GeistMono-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('./fonts/Geist-Regular.woff2') format('woff2'),
+      url('./fonts/Geist-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.color-strong-green {
+  color: #83cd28;
+}
+
+.border-primary {
+  border-color: #FFFFFF24;
+}
+
+.text-heading {
+  font-family: "Geist";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 56px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.text-subheading {
+  font-family: "Geist";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: -0.02em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.text-paragraph {
+  font-family: "Geist";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: -0.02em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}

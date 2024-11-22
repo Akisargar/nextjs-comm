@@ -20,25 +20,44 @@ const sponsors: Sponsor[] = [
 
 export function Sponsors() {
   return (
-    <section className="bg-gray-800 text-white py-16">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Sponsors</h2>
-        <div className="space-y-12">
-          {["title", "platinum", "gold", "silver", "bronze"].map((tier) => (
-            <div key={tier}>
-              <h3 className="text-2xl font-semibold text-center mb-6 capitalize">{tier} Sponsors</h3>
-              <div className="flex flex-wrap justify-center items-center gap-8">
-                {sponsors
-                  .filter((sponsor) => sponsor.tier === tier)
-                  .map((sponsor) => (
-                    <div key={sponsor.name} className="text-center">
-                      <Image src={sponsor.logo} alt={`${sponsor.name} logo`} width={200} height={100} className="mx-auto" />
-                      <p className="mt-2 text-sm">{sponsor.name}</p>
-                    </div>
-                  ))}
+    <section className="bg-gray-900 text-white py-8">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-bold text-center text-heading border-y border-primary p-8">Sponsors</h2>
+        <div className="grid md:grid-cols-2">
+          <div className="border-r border-primary">
+            {["title", "platinum"].map((tier) => (
+              <div key={tier} className="border-b border-primary py-8">
+                <h3 className="text-2xl font-semibold text-center mb-6 capitalize">{tier} Sponsors</h3>
+                <div className="flex flex-wrap justify-center items-center gap-8">
+                  {sponsors
+                    .filter((sponsor) => sponsor.tier === tier)
+                    .map((sponsor) => (
+                      <div key={sponsor.name} className="text-center">
+                        <Image src={sponsor.logo} alt={`${sponsor.name} logo`} width={200} height={100} className="mx-auto" />
+                        <p className="mt-2 text-sm">{sponsor.name}</p>
+                      </div>
+                    ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div >
+            {["gold", "silver", "bronze"].map((tier) => (
+              <div key={tier} className="border-b border-primary py-8">
+                <h3 className="text-2xl font-semibold text-center mb-6 capitalize">{tier} Sponsors</h3>
+                <div className="flex flex-wrap justify-center items-center gap-8">
+                  {sponsors
+                    .filter((sponsor) => sponsor.tier === tier)
+                    .map((sponsor) => (
+                      <div key={sponsor.name} className="text-center">
+                        <Image src={sponsor.logo} alt={`${sponsor.name} logo`} width={200} height={100} className="mx-auto" />
+                        <p className="mt-2 text-sm">{sponsor.name}</p>
+                      </div>
+                    ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
