@@ -1,6 +1,5 @@
 import { Button } from "./ui/button"
 import Image from "next/image"
-import Logo from "./img/next-js-community.svg"
 
 export function Footer() {
   return (
@@ -27,7 +26,7 @@ export function Footer() {
             <div className="space-y-4">
               <div className="flex justify-center mb-6">
                 <Image
-                  src= { Logo }
+                  src="/placeholder.svg"
                   alt="Next.js Community Day Logo"
                   width={150}
                   height={60}
