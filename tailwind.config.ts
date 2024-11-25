@@ -11,6 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "custom-blur-blue": "#83CD281A", // Add the base color
+        "custom-green": "#83CD28B2",
+        "para-green": "#83CD28",
       },
     },
   },
