@@ -3,7 +3,6 @@ import Image from "next/image";
 import Background from "./img/hero-background.svg";
 import Logo from "./img/next-js.svg";
 import CardImage from "./img/card-top.svg";
-import { relative } from "path";
 export function Hero() {
   return (
     <section className="bg-gray-900 text-white p-8 flex flex-wrap justify-around items-center relative gap-12">
